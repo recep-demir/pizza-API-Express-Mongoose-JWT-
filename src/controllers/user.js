@@ -73,6 +73,16 @@ module.exports={
      result,
    });
     },
+    deleteUser: async (req, res) => {
+        /* 
+            #swagger.tags = ['Users']
+            #swagger.summary = 'Delete User'
+        */
+    const result=await User.deleteOne({_id:req.params.id})
+    res.status(result.deletedCount ? 204 : 404).send({
+      error: !deletedCount,    
+    });
+  },
 
 
 }
