@@ -1,12 +1,6 @@
 "use strict"
-/* -------------------------------------------------------
-    | FULLSTACK TEAM | NODEJS / EXPRESS |
-------------------------------------------------------- */
-const router = require('express').Router()
-/* ------------------------------------------------------- */
-// ROUTER INDEX:
 
-// URL: /
+const router = require('express').Router()
 
 // auth:
 router.use('/auth', require('./auth'))
@@ -25,5 +19,4 @@ router.use('/toppings', require('./topping'))
 // document:
 router.use('/documents', require('./document'))
 
-/* ------------------------------------------------------- */
 module.exports = router
