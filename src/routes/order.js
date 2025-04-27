@@ -3,7 +3,7 @@
 const router = require('express').Router()
 const order=require("../controllers/order")
 
-router.route('/').get(order.list).post('order.create')
+router.route('/').get(order.list).post(order.create)
 
 router.route("/:id")
 .get(order.read)
