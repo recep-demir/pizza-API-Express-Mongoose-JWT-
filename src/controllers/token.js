@@ -1,6 +1,5 @@
 "use strict"
 
-
 const Token = require("../models/token");
 
 module.exports = {
