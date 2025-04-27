@@ -1,9 +1,7 @@
 "use strict"
-/* -------------------------------------------------------
-    | FULLSTACK TEAM | NODEJS / EXPRESS |
-------------------------------------------------------- */
+
 const router = require('express').Router()
-/* ------------------------------------------------------- */
+
 // routes/document:
 
 // URL: /documents
@@ -29,5 +27,4 @@ router.use('/redoc', redoc({ specUrl: '/documents/json', title: 'API Docs' }))
 const swaggerUi = require('swagger-ui-express')
 router.use('/swagger', swaggerUi.serve, swaggerUi.setup(require('../configs/swagger.json'), { swaggerOptions: { persistAuthorization: true } }))
 
-/* ------------------------------------------------------- */
 module.exports = router
