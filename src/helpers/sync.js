@@ -1,7 +1,6 @@
 "use strict"
-/* -------------------------------------------------------
-    | FULLSTACK TEAM | NODEJS / EXPRESS |
-------------------------------------------------------- */
+
+
 // sync():
 
 module.exports = async function() {
