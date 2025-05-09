@@ -67,7 +67,7 @@ module.exports = {
         */
     const result=await Token.deleteOne({_id:req.params.id})
     res.status(result.deletedCount ? 204 : 404).send({
-      error: !deletedCount,    
+      error: !result.deletedCount,    
     });
   },
 };
