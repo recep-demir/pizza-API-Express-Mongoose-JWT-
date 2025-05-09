@@ -67,6 +67,8 @@ module.exports={
    const result = await User.updateOne({ _id: req.params.id }, req.body, {
      runValidator: true,
      new: true,
+     /* runValidators: true: MongoDB şemasında tanımlı doğrulama kurallarının (örneğin, required, minlength, enum vb.) güncelleme işlemi sırasında çalıştırılmasını sağlar. Varsayılan olarak, updateOne doğrulayıcıları çalıştırmaz, bu yüzden bu ayar açıkça belirtilmiş.
+      !new: true: Bu ayar, updateOne metodunun davranışını değiştirir. Normalde updateOne, güncellenmeden önceki dökümanı döndürür. new: true ile, güncellenmiş döküman döndürülür. Bu, istemciye en güncel veriyi göstermek için kullanışlıdır. */
    });
    res.status(202).send({
      error: false,
