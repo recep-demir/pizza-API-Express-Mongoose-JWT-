@@ -15,7 +15,7 @@ const PizzaSchema=new mongoose.Schema({
         required:true
       },
 
-      // Birden fazla topping ( içereceği malzeme(sucuk,mantar gibi) array kullanıldı)
+      //it is used as an Array because It can contain  more than one topping.- Birden fazla topping ( içereceği malzeme(sucuk,mantar gibi) array kullanıldı)
       toppingIds:[
         {
             type:mongoose.Schema.Types.ObjectId,
