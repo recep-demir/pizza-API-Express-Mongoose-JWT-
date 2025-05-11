@@ -31,11 +31,9 @@ module.exports = {
     create: async (req, res) => {
          /* 
                   #swagger.ignore=true
-           
           */
       
-   
-      // toppingIds=[1,1,3,3,4,4,4,5]  bu şekilde tekrarlanana toppingIdler olabilir.
+      // toppingIds=[1,1,3,3,4,4,4,5] there can be repeated topingIds like that.  bu şekilde tekrarlanana toppingIdler olabilir.
   
       req.body.toppingIds=[...new Set(req.body.toppingIds)]
   
