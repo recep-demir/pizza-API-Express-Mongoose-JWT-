@@ -61,15 +61,7 @@ module.exports = {
             },
             token: tokenData.token,
             user: user
-        })
-
-
-
-
-
-
-
-       
+        })  
     },
 
     logout: async (req, res) => {
