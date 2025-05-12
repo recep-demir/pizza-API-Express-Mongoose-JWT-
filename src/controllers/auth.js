@@ -53,6 +53,16 @@ module.exports = {
         // Refresh Token:
         const refreshToken = jwt.sign({ _id: user._id }, process.env.REFRESH_KEY, { expiresIn: '1d' });
 
+        res.status(200).send({
+            error: false,
+            bearer:{
+                access: accessToken,
+                refresh: refreshToken
+            },
+            token: tokenData.token,
+            user: user
+        })
+
 
 
 
