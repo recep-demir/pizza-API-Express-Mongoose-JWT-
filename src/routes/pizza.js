@@ -2,6 +2,8 @@
 
 const router = require('express').Router()
 const pizza=require("../controllers/pizza")
+const upload = require('../middlewares/upload');
+
 
 
 router.route("/").get(pizza.list).post(pizza.create)
