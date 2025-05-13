@@ -2,7 +2,7 @@
 
 const router = require('express').Router()
 const pizza=require("../controllers/pizza")
-const upload = require('../middlewares/upload');
+// const upload = require('../middlewares/upload');
 
 
 
