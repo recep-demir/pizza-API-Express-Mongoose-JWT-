@@ -19,7 +19,7 @@ module.exports = {
               `
           */
   
-      const result = await res.getModelList(Pizza,"toppingIds");
+      const result = await res.getModelList(Pizza,{},"toppingIds");
   
       res.status(200).send({
         error: false,
